@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#43A047</color>
+    <color name="colorPrimaryDark">#388E3C</color>
+    <color name="colorAccent">#43A047</color>
+
+    <color name="colorStatusOk">#43A047</color>
+    <color name="colorStatusOkDark">#388E3C</color>
+    <color name="colorStatusWarning">#EF6C00</color>
+    <color name="colorStatusWarningDark">#E65100</color>
+    <color name="colorStatusDeveloper">#3F51B5</color>
+    <color name="colorStatusDeveloperDark">#3949AB</color>
+</resources>

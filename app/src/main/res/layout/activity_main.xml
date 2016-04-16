@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.badonlabs.brigham.moonlit.MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:theme="@style/ToolbarTheme"
+        tools:ignore="UnusedAttribute" />
+
+    <fragment
+        android:id="@+id/fragment"
+        class="com.badonlabs.brigham.moonlit.fragment.DeviceFragment"
+        android:layout_width="@dimen/status_circle_height"
+        android:layout_height="@dimen/status_circle_height"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+</RelativeLayout>

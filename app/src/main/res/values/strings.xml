@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">moon.lit</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="error_auto_sign_in">An unexpected problem occurred and we couldn\'t sign you in.</string>
+
+    <string name="status_connected">Connected</string>
+    <string name="status_disconnected">Disconnected</string>
+    <string name="status_tinker">Developer Mode</string>
+    <string name="status_flashing">Updating</string>
+
+    <string name="menu_refresh">Refresh</string>
+</resources>
