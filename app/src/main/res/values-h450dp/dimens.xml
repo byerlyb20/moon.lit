@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="status_circle_height">300dp</dimen>
+    <dimen name="status_circle_corner_radius">150dp</dimen>
+    <dimen name="status_text_margin_top">38dp</dimen>
+</resources>

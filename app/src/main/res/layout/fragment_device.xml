@@ -1,41 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="@dimen/status_circle_height"
-    android:layout_height="@dimen/status_circle_height"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    card_view:cardCornerRadius="@dimen/status_circle_corner_radius"
-    card_view:cardElevation="4dp"
-    tools:context="com.badonlabs.brigham.moonlit.fragment.DeviceFragment">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
-    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+    <android.support.v7.widget.CardView
+        android:layout_width="@dimen/status_circle_height"
+        android:layout_height="@dimen/status_circle_height"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        card_view:cardCornerRadius="@dimen/status_circle_corner_radius"
+        card_view:cardElevation="4dp"
         tools:context="com.badonlabs.brigham.moonlit.fragment.DeviceFragment">
 
-        <ImageView
-            android:id="@+id/statusIcon"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true"
-            android:layout_gravity="center_horizontal"
-            tools:ignore="ContentDescription" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context="com.badonlabs.brigham.moonlit.fragment.DeviceFragment">
 
-        <TextView
-            android:id="@+id/statusMsg"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/statusIcon"
-            android:layout_centerHorizontal="true"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="38dp"
-            android:textAllCaps="true"
-            android:textAppearance="@style/StatusText" />
-    </RelativeLayout>
-</android.support.v7.widget.CardView>
+            <ImageView
+                android:id="@+id/statusIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_horizontal"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/statusMsg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/statusIcon"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/status_text_margin_top"
+                android:textAllCaps="true"
+                android:textAppearance="@style/StatusText" />
+
+            <TextView
+                android:id="@+id/occupiedMsg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/statusMsg"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:textAllCaps="true"
+                android:textAppearance="@style/StatusText" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

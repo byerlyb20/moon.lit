@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.badonlabs.brigham.moonlit.prefs.ColorPreference
+        android:summary="@string/settings_color_detail"
+        android:title="@string/settings_color" />
+
+</PreferenceScreen>
